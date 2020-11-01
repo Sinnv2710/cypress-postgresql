@@ -11,13 +11,13 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 const pgp = require('pg-promise')();
-if ( file === "dev") {
+if ( Cypress.env('configFile') === "dev") {
   const postgressConfig = require(require('path').resolve('cypress/plugins/db/dev.json'));
-} else if (file === "stage")
+} else if (Cypress.env('configFile') === "stage")
 {
   const postgressConfig = require(require('path').resolve('cypress/plugins/db/stage.json'));
 }
-else if (file === "production") 
+else if (Cypress.env('configFile') === "production") 
 {
   const postgressConfig = require(require('path').resolve('cypress/plugins/db/production.json'));
 }
