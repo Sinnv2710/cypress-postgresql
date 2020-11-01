@@ -54,14 +54,4 @@ let connection={"user": "postgres",
   cy.task("dbQuery", {"query":"your sql query","connection":connection}).then(queryResponse => {
             expect(queryResponse).to.equal("[{Your expected query result}]")
         });
-```
-## Contributors
-
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://www.linkedin.com/in/siddharth-kala-575ba6175/"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQFSKgEAqprkcA/profile-displayphoto-shrink_400_400/0?e=1602115200&amp;v=beta&amp;t=dXeAXbqHe7MyENd7o8zdH_bbAFdffnAdVx3rsQkygjg" width="100px;" alt="Siddharth Kala"/><br /><sub><b>Siddharth Kala</b></sub></a><br /><a href="https://github.com/siddharth23/cypress-postgres.git" title="Code">💻</a> <a href="https://github.com/siddharth23/cypress-postgres.git" title="Tests">⚠️</a></td></tr></table>
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+```WWWWWWW

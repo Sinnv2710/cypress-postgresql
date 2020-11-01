@@ -1,5 +1,5 @@
 {
-  "name": "@credify/cypress-postgresql",
+  "name": "credify-cypress-sql",
   "version": "1.0.0",
   "description": "This is setting postgresql for cypress automation of Credify",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/Sinnv2710/cypress-postgresql.git"
   },
-  "author": "",
+  "author": "sin.nguyen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Sinnv2710/cypress-postgresql/issues"
@@ -32,5 +32,8 @@
   },
   "dependencies": {
     "pg-promise": "10.5.8"
-  }
+  },
+  "keywords": [
+    "credify"
+  ]
 }
