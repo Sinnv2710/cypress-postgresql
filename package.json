@@ -1,16 +1,21 @@
 {
-  "name": "@siddharth23/cypress-postgres",
-  "version": "1.0.2",
-  "description": "Query postgres db via Cypress",
-  "main": "cypress/plugins/index.js",
-  "repository": "https://github.com/siddharth23/cypress-postgres.git",
-  "author": "Siddharth Kala <siddharth.kala1989@gmail.com>",
-  "keywords": [
-    "cypress",
-    "cypress plugin",
-    "postgres"
-  ],
-  "license": "MIT",
+  "name": "@credify/cypress-postgresql",
+  "version": "1.0.0",
+  "description": "This is setting postgresql for cypress automation of Credify",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Sinnv2710/cypress-postgresql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sinnv2710/cypress-postgresql/issues"
+  },
+  "homepage": "https://github.com/Sinnv2710/cypress-postgresql#readme",
   "devDependencies": {
     "cypress": "4.12.1",
     "cypress-wait-until": "1.7.1",
@@ -20,18 +25,12 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "publishConfig": {
+      "access": "public"
     }
-  },
-  "scripts": {
-    "commit": "npx git-cz",
-    "cy:open": "cypress open",
-    "test": "npm run cy:run",
-    "cy:run": "cypress run"
   },
   "dependencies": {
     "pg-promise": "10.5.8"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
