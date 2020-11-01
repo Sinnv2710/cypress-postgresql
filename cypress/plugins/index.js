@@ -11,18 +11,19 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 const pgp = require('pg-promise')();
-if ( Cypress.env('configFile') === "dev") {
+let environment;
+if ( environment === "dev") {
   const postgressConfig = require(require('path').resolve('cypress/plugins/db/dev.json'));
-} else if (Cypress.env('configFile') === "stage")
+} else if (environment === "stage")
 {
   const postgressConfig = require(require('path').resolve('cypress/plugins/db/stage.json'));
 }
-else if (Cypress.env('configFile') === "production") 
+else if (environment === "production") 
 {
   const postgressConfig = require(require('path').resolve('cypress/plugins/db/production.json'));
 }
 
-module.exports =  function(query,userDefineConnection)  {
+module.exports =  function(query,userDefineConnection,environment)  {
   let connection = postgressConfig.db
   if (userDefineConnection!=undefined){
     connection=userDefineConnection
