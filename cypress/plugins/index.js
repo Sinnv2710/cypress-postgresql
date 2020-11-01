@@ -44,5 +44,3 @@ module.exports =  function(query,userDefineConnection,environment)  {
     return db.any(query)
   }
 }
-
-
